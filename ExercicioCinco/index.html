@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    
+
+    <script>
+        const nome = prompt('Digiite seu nome:')
+const quantidadesDeLetras = nome.length;
+const nomeUltimasTres = nome.slice(-3)
+
+document.body.innerHTML += `seu nome é ${nome} <br />`;
+document.body.innerHTML +=`seu nome tem ${quantidadesDeLetras} letra <br />`;
+document.body.innerHTML +=` A segunda letra de seu nome é: ${nome[1]}<br />`;
+document.body.innerHTML +=`qual é o primeiro indice da letra A de seu nome: ${nome.indexOf('a')} <br/>`;
+document.body.innerHTML +=`qual é o  ultimo indice da letra A de seu nome: ${nome.lastIndexOf
+('a')} <br/>`;  
+document.body.innerHTML +=`as ultimas 3 letras de seu nome são: ${nomeUltimasTres} <br />`;
+document.body.innerHTML +=`as palavras de seu nome são : ${nome.split(' ')} <br />`;
+document.body.innerHTML +=`seu nome com letras maiusculas são: ${nome.toUpperCase()} <br />`;
+document.body.innerHTML +=`seu nome com letras minusculas é: ${nome.toLowerCase()} <br />`;
+    </script>
+</body>
+</html>
